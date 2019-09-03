@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sy.Core.Abstracts
 {
-    public abstract class BaseEntitty<TKey> : IEntity<TKey>
+    public abstract class BaseEntitty<TKey> : AuditBase, IEntity<TKey>
     {
         [Key]
         public TKey Id { get; set; }

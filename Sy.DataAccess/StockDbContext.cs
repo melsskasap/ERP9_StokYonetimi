@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.Entity;
+using Sy.Core.Entities;
+
+namespace Sy.DataAccess
+{
+    public class StockDbContext : DbContext
+    {
+        public StockDbContext()
+            : base(nameOrConnectionString: "name=Mycon")
+        {
+        }
+
+        public virtual DbSet<Product> Products { get; set; }
+    }
+}
