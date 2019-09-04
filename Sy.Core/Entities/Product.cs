@@ -24,11 +24,12 @@ namespace Sy.Core.Entities
         public string ProductName { get; set; }
 
         [Range(0, 9999999)]
-
+        
         public decimal UnitPrice { get; set; }
 
         public int CriticStock { get; set; } = 10;
 
+        public virtual ICollection<ProductStockAction> ProductStockActions { get; set; } = new HashSet<ProductStockAction>();
 
 
 

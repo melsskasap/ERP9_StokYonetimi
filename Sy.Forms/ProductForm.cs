@@ -1,6 +1,7 @@
 ﻿using Sy.Business.Repository;
 using Sy.Core.Abstracts;
 using Sy.Core.Entities;
+using Sy.Core.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,23 +21,47 @@ namespace Sy.Forms
         {
             InitializeComponent();
             _productRepo = new Repository <Product, Guid>();
+            ListeyiDoldur();
         }
 
 
-        private void ProductForm_Load(object sender, EventArgs e)
+        
+
+        private void ListeyiDoldur(string search ="")
         {
+            var data = _productRepo.Query(predicate: x => x.ProductName.Contains(search)).Select(x => new ProductViewModel()
+            {
+                Id = x.Id,
+                UnitPrice = x.UnitPrice,
+                CriticStock = x.CriticStock,
+                ProductName = x.ProductName
 
+            }).ToList();
+            lstUrunler.DataSource = data;
+            lstUrunler.DisplayMember = "Display";
         }
-
         private void btnKaydol_Click(object sender, EventArgs e)
         {
-            _productRepo.Insert(new Product()
+            try
             {
-                ProductName = txtUrunAdi.Text,
-                UnitPrice = nFiyat.Value,
-                CriticStock = Convert.ToInt32(nKritikStok.Value)
-            });
-            MessageBox.Show(text: "Ürün Ekleme İşlemi Başarılı..");
+                _productRepo.Insert(new Product()
+                {
+                    ProductName = txtUrunAdi.Text,
+                    UnitPrice = nFiyat.Value,
+                    CriticStock = Convert.ToInt32(nKritikStok.Value)
+                });
+                MessageBox.Show(text: "Ürün Ekleme İşlemi Başarılı..");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+        
+        private void txtAra_KeyUp(object sender, KeyEventArgs e)
+        {
+            ListeyiDoldur(txtAra.Text);
         }
     }
 }

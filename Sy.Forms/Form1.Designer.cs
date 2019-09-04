@@ -32,7 +32,13 @@
             this.btnKayitOl = new System.Windows.Forms.Button();
             this.btnGiris = new System.Windows.Forms.Button();
             this.lblGirisBilgi = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ürünlerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.siparişlerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.müşterilerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.repolarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gbGiris.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbGiris
@@ -40,7 +46,7 @@
             this.gbGiris.Controls.Add(this.btnKayitOl);
             this.gbGiris.Controls.Add(this.btnGiris);
             this.gbGiris.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gbGiris.Location = new System.Drawing.Point(54, 113);
+            this.gbGiris.Location = new System.Drawing.Point(152, 114);
             this.gbGiris.Name = "gbGiris";
             this.gbGiris.Size = new System.Drawing.Size(343, 168);
             this.gbGiris.TabIndex = 0;
@@ -77,18 +83,62 @@
             this.lblGirisBilgi.Size = new System.Drawing.Size(0, 13);
             this.lblGirisBilgi.TabIndex = 1;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ürünlerToolStripMenuItem,
+            this.siparişlerToolStripMenuItem1,
+            this.müşterilerToolStripMenuItem,
+            this.repolarToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(126, 338);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // ürünlerToolStripMenuItem
+            // 
+            this.ürünlerToolStripMenuItem.Name = "ürünlerToolStripMenuItem";
+            this.ürünlerToolStripMenuItem.Size = new System.Drawing.Size(113, 19);
+            this.ürünlerToolStripMenuItem.Text = "Ürünler";
+            this.ürünlerToolStripMenuItem.Click += new System.EventHandler(this.ürünlerToolStripMenuItem_Click);
+            // 
+            // siparişlerToolStripMenuItem1
+            // 
+            this.siparişlerToolStripMenuItem1.Name = "siparişlerToolStripMenuItem1";
+            this.siparişlerToolStripMenuItem1.Size = new System.Drawing.Size(113, 19);
+            this.siparişlerToolStripMenuItem1.Text = "Siparişler";
+            this.siparişlerToolStripMenuItem1.Click += new System.EventHandler(this.siparişlerToolStripMenuItem1_Click);
+            // 
+            // müşterilerToolStripMenuItem
+            // 
+            this.müşterilerToolStripMenuItem.Name = "müşterilerToolStripMenuItem";
+            this.müşterilerToolStripMenuItem.Size = new System.Drawing.Size(113, 19);
+            this.müşterilerToolStripMenuItem.Text = "Müşteriler";
+            // 
+            // repolarToolStripMenuItem
+            // 
+            this.repolarToolStripMenuItem.Name = "repolarToolStripMenuItem";
+            this.repolarToolStripMenuItem.Size = new System.Drawing.Size(113, 19);
+            this.repolarToolStripMenuItem.Text = "Repolar";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(464, 338);
+            this.ClientSize = new System.Drawing.Size(577, 338);
             this.Controls.Add(this.lblGirisBilgi);
             this.Controls.Add(this.gbGiris);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.gbGiris.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,6 +150,11 @@
         private System.Windows.Forms.Button btnKayitOl;
         private System.Windows.Forms.Button btnGiris;
         private System.Windows.Forms.Label lblGirisBilgi;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem ürünlerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem siparişlerToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem müşterilerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem repolarToolStripMenuItem;
     }
 }
 

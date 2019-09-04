@@ -119,6 +119,7 @@
             this.txtAra.Name = "txtAra";
             this.txtAra.Size = new System.Drawing.Size(206, 20);
             this.txtAra.TabIndex = 4;
+            this.txtAra.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtAra_KeyUp);
             // 
             // lstUrunler
             // 
@@ -156,7 +157,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ProductForm";
             this.Text = "ProductForm";
-            this.Load += new System.EventHandler(this.ProductForm_Load);
+
             ((System.ComponentModel.ISupportInitialize)(this.nKritikStok)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nFiyat)).EndInit();
             this.ResumeLayout(false);
