@@ -12,6 +12,7 @@ using System;
 using Sy.Forms.Auth;
 using Sy.Business.Repository;
 using Sy.Core.Entities;
+using Sy.Core.ComplexTypes;
 
 namespace Sy.Forms
 {
@@ -23,12 +24,29 @@ namespace Sy.Forms
         public Form1()
         {
             InitializeComponent();
+            _productRepo = new Repository<Product, Guid>();
+            gbGiris.Visible = true;
+            lblGirisBilgi.Visible = false;
         }
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
+
             LoginForm frm = new LoginForm();
             frm.ShowDialog();
+            if (StockSettings.UserInfo == null)
+            {
+                gbGiris.Visible = true;
+                lblGirisBilgi.Visible = false;
+
+                    
+            }
+            else
+            {
+                gbGiris.Visible = false;
+                lblGirisBilgi.Visible = true;
+                lblGirisBilgi.Text = StockSettings.UserInfo.Display;
+            }
         }
          
 

@@ -31,6 +31,7 @@
             this.gbGiris = new System.Windows.Forms.GroupBox();
             this.btnKayitOl = new System.Windows.Forms.Button();
             this.btnGiris = new System.Windows.Forms.Button();
+            this.lblGirisBilgi = new System.Windows.Forms.Label();
             this.gbGiris.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -39,7 +40,7 @@
             this.gbGiris.Controls.Add(this.btnKayitOl);
             this.gbGiris.Controls.Add(this.btnGiris);
             this.gbGiris.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gbGiris.Location = new System.Drawing.Point(12, 42);
+            this.gbGiris.Location = new System.Drawing.Point(54, 113);
             this.gbGiris.Name = "gbGiris";
             this.gbGiris.Size = new System.Drawing.Size(343, 168);
             this.gbGiris.TabIndex = 0;
@@ -68,18 +69,28 @@
             this.btnGiris.UseVisualStyleBackColor = false;
             this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
+            // lblGirisBilgi
+            // 
+            this.lblGirisBilgi.AutoSize = true;
+            this.lblGirisBilgi.Location = new System.Drawing.Point(188, 60);
+            this.lblGirisBilgi.Name = "lblGirisBilgi";
+            this.lblGirisBilgi.Size = new System.Drawing.Size(0, 13);
+            this.lblGirisBilgi.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(381, 279);
+            this.ClientSize = new System.Drawing.Size(464, 338);
+            this.Controls.Add(this.lblGirisBilgi);
             this.Controls.Add(this.gbGiris);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.gbGiris.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -88,6 +99,7 @@
         private System.Windows.Forms.GroupBox gbGiris;
         private System.Windows.Forms.Button btnKayitOl;
         private System.Windows.Forms.Button btnGiris;
+        private System.Windows.Forms.Label lblGirisBilgi;
     }
 }
 
