@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             this.gbGiris = new System.Windows.Forms.GroupBox();
-            this.btnGiris = new System.Windows.Forms.Button();
             this.btnKayitOl = new System.Windows.Forms.Button();
-            this.lblGirisBilgi = new System.Windows.Forms.Label();
+            this.btnGiris = new System.Windows.Forms.Button();
             this.gbGiris.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,45 +39,34 @@
             this.gbGiris.Controls.Add(this.btnKayitOl);
             this.gbGiris.Controls.Add(this.btnGiris);
             this.gbGiris.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gbGiris.Location = new System.Drawing.Point(45, 90);
+            this.gbGiris.Location = new System.Drawing.Point(12, 42);
             this.gbGiris.Name = "gbGiris";
-            this.gbGiris.Size = new System.Drawing.Size(291, 120);
+            this.gbGiris.Size = new System.Drawing.Size(343, 168);
             this.gbGiris.TabIndex = 0;
             this.gbGiris.TabStop = false;
             this.gbGiris.Text = "Giriş";
             // 
-            // btnGiris
-            // 
-            this.btnGiris.BackColor = System.Drawing.Color.Silver;
-            this.btnGiris.Location = new System.Drawing.Point(26, 29);
-            this.btnGiris.Name = "btnGiris";
-            this.btnGiris.Size = new System.Drawing.Size(106, 65);
-            this.btnGiris.TabIndex = 0;
-            this.btnGiris.Text = "Giriş Yap";
-            this.btnGiris.UseVisualStyleBackColor = false;
-            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
-            // 
             // btnKayitOl
             // 
             this.btnKayitOl.BackColor = System.Drawing.Color.Silver;
-            this.btnKayitOl.Location = new System.Drawing.Point(159, 29);
+            this.btnKayitOl.Location = new System.Drawing.Point(185, 45);
             this.btnKayitOl.Name = "btnKayitOl";
-            this.btnKayitOl.Size = new System.Drawing.Size(107, 65);
+            this.btnKayitOl.Size = new System.Drawing.Size(130, 81);
             this.btnKayitOl.TabIndex = 0;
             this.btnKayitOl.Text = "Kayıt Ol";
             this.btnKayitOl.UseVisualStyleBackColor = false;
             this.btnKayitOl.Click += new System.EventHandler(this.btnKayitOl_Click);
             // 
-            // lblGirisBilgi
+            // btnGiris
             // 
-            this.lblGirisBilgi.AutoSize = true;
-            this.lblGirisBilgi.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblGirisBilgi.ForeColor = System.Drawing.Color.Red;
-            this.lblGirisBilgi.Location = new System.Drawing.Point(105, 48);
-            this.lblGirisBilgi.Name = "lblGirisBilgi";
-            this.lblGirisBilgi.Size = new System.Drawing.Size(162, 18);
-            this.lblGirisBilgi.TabIndex = 1;
-            this.lblGirisBilgi.Text = "Hoşgeldin : Kamil Fıdıl";
+            this.btnGiris.BackColor = System.Drawing.Color.Silver;
+            this.btnGiris.Location = new System.Drawing.Point(26, 45);
+            this.btnGiris.Name = "btnGiris";
+            this.btnGiris.Size = new System.Drawing.Size(121, 81);
+            this.btnGiris.TabIndex = 0;
+            this.btnGiris.Text = "Giriş Yap";
+            this.btnGiris.UseVisualStyleBackColor = false;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
             // Form1
             // 
@@ -86,14 +74,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(381, 279);
-            this.Controls.Add(this.lblGirisBilgi);
             this.Controls.Add(this.gbGiris);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.gbGiris.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -102,7 +88,6 @@
         private System.Windows.Forms.GroupBox gbGiris;
         private System.Windows.Forms.Button btnKayitOl;
         private System.Windows.Forms.Button btnGiris;
-        private System.Windows.Forms.Label lblGirisBilgi;
     }
 }
 

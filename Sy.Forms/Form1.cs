@@ -8,12 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System;
+using Sy.Forms.Auth;
+using Sy.Business.Repository;
+using Sy.Core.Entities;
 
 namespace Sy.Forms
 {
     public partial class Form1 : Form
+
     {
+        private Repository<Product, Guid> _productRepo;
+
         public Form1()
         {
             InitializeComponent();
@@ -24,6 +30,7 @@ namespace Sy.Forms
             LoginForm frm = new LoginForm();
             frm.ShowDialog();
         }
+         
 
         private void btnKayitOl_Click(object sender, EventArgs e)
         {

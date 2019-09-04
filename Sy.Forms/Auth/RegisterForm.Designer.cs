@@ -42,70 +42,88 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(47, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 13);
+            this.label1.Size = new System.Drawing.Size(21, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ad";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(47, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(41, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Soyad";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(47, 96);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.Size = new System.Drawing.Size(39, 15);
             this.label3.TabIndex = 0;
             this.label3.Text = "Email";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(47, 122);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(28, 13);
+            this.label4.Size = new System.Drawing.Size(32, 15);
             this.label4.TabIndex = 0;
             this.label4.Text = "Şifre";
             // 
             // txtAd
             // 
+            this.txtAd.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtAd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtAd.Location = new System.Drawing.Point(108, 35);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(151, 20);
+            this.txtAd.Size = new System.Drawing.Size(151, 21);
             this.txtAd.TabIndex = 1;
             // 
             // txtSoyad
             // 
+            this.txtSoyad.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSoyad.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSoyad.Location = new System.Drawing.Point(108, 64);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(151, 20);
+            this.txtSoyad.Size = new System.Drawing.Size(151, 21);
             this.txtSoyad.TabIndex = 1;
             // 
             // txtEmail
             // 
+            this.txtEmail.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtEmail.Location = new System.Drawing.Point(108, 89);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(151, 20);
+            this.txtEmail.Size = new System.Drawing.Size(151, 21);
             this.txtEmail.TabIndex = 1;
             // 
             // txtSifre
             // 
+            this.txtSifre.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSifre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSifre.Location = new System.Drawing.Point(108, 119);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.PasswordChar = '*';
-            this.txtSifre.Size = new System.Drawing.Size(151, 20);
+            this.txtSifre.Size = new System.Drawing.Size(151, 21);
             this.txtSifre.TabIndex = 1;
             // 
             // btnKayit
             // 
+            this.btnKayit.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKayit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnKayit.Location = new System.Drawing.Point(108, 170);
             this.btnKayit.Name = "btnKayit";
             this.btnKayit.Size = new System.Drawing.Size(151, 23);
@@ -118,6 +136,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(332, 258);
             this.Controls.Add(this.btnKayit);
             this.Controls.Add(this.txtSifre);
@@ -128,6 +147,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterForm";
