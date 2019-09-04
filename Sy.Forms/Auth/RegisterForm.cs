@@ -1,5 +1,6 @@
 ﻿using Sy.Business.Repository;
 using Sy.Core.Entities;
+using Sy.Core.Enums;
 using Sy.Core.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -40,12 +41,16 @@ namespace Sy.Forms.Auth
                 return;
             }
             //benzersiz emial kontrolünden sonra kişiyi kaydedelim
+
+            var musteriMi = _clientRepository.Query().Any();  //müşteri mi değil mi diye kontrol ediyor.
+
             _clientRepository.Insert(new Client()
             {
                 Email = model.Email,
                 Surname = model.Surname,
                 Password = model.Password,
-                Name = model.Name
+                Name = model.Name,
+                ApplicationRole = musteriMi ? ApplicationRole.Customer : ApplicationRole.Admin
 
             });
             MessageBox.Show(text: $"Kayıt İşleminiz Başarılıdır. \n {model.Name} {model.Surname}");
